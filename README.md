@@ -1,12 +1,28 @@
 # <div align="center">RPEmotes 🏋️</div>
 
-## This is the OFFICIAL repository of RPEmotes. I am not associated with PopcornRP.
+## This is the OFFICIAL repository of RPEmotes.
+
+### RPEmotes is under GNU GPL v3 licensing.
+
+### If you fork or include any content from this menu into your own, all credits must remain including credits to myself and Dullpear, and the content must remain __**OPEN SOURCE**__. 
+
+### You must not escrow ANY of the content included in this menu including but not limited to code, props and animations.
+
+If this bullshit behaviour continues, I will make the repository private yet again. Fuck the FiveM money hungry community.
+
+-------------------------------
 
 RPEmotes <b><i>was</b></i> a community driven FiveM emote menu allowing players to express themselves in roleplay with custom animations, countless facial expressions, walkstyles and props, inspired by [DullPear](https://github.com/andristum/dpemotes). 
 
 Unfortunately, as FiveM fails to enforce their own ToS and many individuals have bullied me out of the community, it is no longer being maintained. 
 
-Please troubleshoot it yourself and stay away from <b>unofficial</b> copies.
+  - It is also extremely shameful that despite the repository being licensed under GPL V3, many scumbags within the community can essentionally steal and reupload its' content to their shady Tebex stores, of which the Tebex support team simply turn a blind eye to as it makes them, Rockstar, and the Cfx.re team money.
+
+I simply don't care about getting inspiration or if you want to make a new UI as you don't find NativeUI appealing; that's fine, but to outright steal animations and props from the community of which have been gracefully provided to RPEmotes under the conditions that I, TayMcKenzieNZ do not finanically profit of it, only for you others to reupload behind a paywall, is for lack of a better word, "Completely and utterly fucked up".
+
+Too often I am seeing exact copies and nothing is unique. Oh look, your menu has an option to disable the idle camera; Did I invent that? No. Was I the first to implement it into an animation menu? Yeah. Can I stop anyone else from doing so? No. But at least be unique, at least add something to your menu that makes someone say "DUDE! I've been wanting this forever but this other person doesn't have it. Damn! Thanks man!" Rather than just a blantant copy paste with a new UI.
+
+As I am no longer actively updating this repository and resource, please troubleshoot it yourself and stay away from <b>unofficial</b> copies that refuse to acknowledge the hardwork of those who contributed to the original resource.
 
 
 ---------------------------------------------------------------------------------------------------------
@@ -57,6 +73,8 @@ Please troubleshoot it yourself and stay away from <b>unofficial</b> copies.
 
 * Italian 🇮🇹
 
+* Japanese 🇯🇵
+
 * Lithuanian 🇱🇹
 
 * Norwegian 🇳🇴
@@ -90,6 +108,10 @@ Languages can be selected and / or added in the config.lua.
 ---------------------------------------------------------------------------------------------------------
 
 # Features 🛠️
+
+ - Changeable Banner Font
+
+ - Changable Banner Colour
 
 - Multiple Translations 🌏
 
@@ -196,6 +218,31 @@ If you do not want to use the SQL features keep the `oxmysql` region in fxmanife
 Alternatively, you can use the keybind command that comes with FiveM without having to use SQL, by entering the following into F8:
 
 `bind keyboard "Yourbutton" "e youremote"`. To remove the keybind, type `"unbind keyboard "Yourbutton"`.
+
+---------------------------------------------------------------------------------------------------------
+
+# Menu Customization
+
+In the appropiately named `config.lua` file, server owners can set the MenuTitle or simply leave it blank. Ideally, this should be 11 characters or less without any spaces.
+You can also set the font, whether or not you want an outline and the MenuPosition. The available fonts are as followed:
+
+```lua
+    -- 0 : Chalet London
+    -- 1 : House Script
+    -- 2 : Monospace
+    -- 4 : Chalet Comprime Cologne
+    -- 7 : Pricedown
+```
+
+RPEmotes also supports custom banners (known as 'MenuImage') which can be defined by a simple imgur, giphy or discord URL like so:
+
+```lua
+MenuImage = 'https://i.imgur.com/osq2J0h.png',
+```
+
+You can find a banner template here - https://imgur.com/a/jRrVBog. Banners must be 512 x 128 pixels and can be either gif or png.
+
+
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -410,7 +457,11 @@ Alternatively, you can use the keybind command that comes with FiveM without hav
 
 - **Check out my youtube playlist below:**
 
-[![Video Preview](https://img.youtube.com/vi/Uk_ggRRlFuo/0.jpg)](https://www.youtube.com/watch?v=3uVe0hvWwPQ&list=PLzFM1zdDHFn2vKWT323wVJoEkGhWiyyeC)
+[![Video Preview](https://img.youtube.com/vi/T8f8ZUJrIOo/0.jpg)](https://youtube.com/playlist?list=PLzFM1zdDHFn2vKWT323wVJoEkGhWiyyeC)
+
+A text tutorial for Shared Emotes can be found [here](https://forum.cfx.re/t/how-to-menyoo-to-rpemotes-emote-props-shared-emotes-conversions/4775018). 
+
+I recommend using the updated and supported version of [Menyoo](https://github.com/itsjustcurtis/MenyooSP/releases) by ItsJustCurtis as it already supports FiveM, taking away rhe manual frustration of updating the ASI file, which I previously mentioned in the forum post before Cfx.re banned me out of spite.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -528,4 +579,6 @@ You paid a huge role in making this script what it is today and we could not do 
 
 # REMINDER
 
-This is the <b>OFFICIAL</b> repository for RPEmotes, is no longer being maintained and has <b>NO</b> association with PopcornRP, PrinceAlbert, Linden, or Scully. While our menus may appear visibly similar or contain similar content, all content was contributed by the community, regardless of which menu. We appreciate everything you have contributed and hope that you enjoy the menu, whichever you decide to choose 🙏.
+This is the <b>OFFICIAL</b> repository for RPEmotes, is no longer being maintained and has <b>NO</b> association with Linden, or Scullyy. While our menus may appear visibly similar or contain similar content, all content was contributed by the community.
+
+We appreciate everything you have contributed and hope that you enjoy the menu 🙏.
